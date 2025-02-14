@@ -6,15 +6,15 @@ public class Main {
         } else {
             System.out.println("Установите версию приложения для Android по ссылке");}
 
-        int ClientOS = 1;
-        int clientDeviceYear = 2015;
-        if (ClientOS == 1 && clientDeviceYear > 2015){
+        int clientOSYear = 0;
+        int clientDeviceYear = 2018;
+        if (clientOSYear == 1 && clientDeviceYear >= 2015){
             System.out.println("Установите версию приложения для Android по ссылке");
-        } else {
+        } else if (clientOSYear == 1 && clientDeviceYear < 2015){
             System.out.println("Установите облегченную версию приложения для Android по ссылке");}
-        if (ClientOS == 0 && clientDeviceYear > 2015){
+        if (clientOSYear == 0 && clientDeviceYear >= 2015){
             System.out.println("Установите версию приложения для iOS по ссылке");
-        } else {
+        } else if (clientOSYear == 0 && clientDeviceYear < 2015){
             System.out.println("Установите облегченную версию приложения для iOS по ссылке");}
 
 
